@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cement to Ballast Ratio Calculator — How Many Bags Per Bulk Bag?</title>
-    <meta name="description" content="Calculate how many bags of cement you need per bulk bag of ballast, tonne of ballast, or bulk bag of sand. Adjust mix ratios and bag sizes instantly.">
-    <meta name="keywords" content="cement to ballast ratio, how many bags of cement to a bulk bag of ballast, cement per bulk bag of ballast, bags of cement to a tonne of ballast, cement to sand ratio, cement ballast calculator, how many bags of cement to a bulk bag of sand">
-    <link rel="canonical" href="">
+    <title>Ballast and Cement Calculator — Sand and Cement Mix Ratio Guide</title>
+    <meta name="description" content="Free ballast and cement calculator. Find the right ballast to cement ratio, sand and cement mix ratio, and how many bags of cement per bulk bag of ballast or sand. Instant results.">
+    <meta name="keywords" content="ballast to cement ratio, cement to ballast ratio, ballast and cement calculator, cement and ballast calculator, sand and cement mix, sand cement mix, sand and cement, ballast and cement ratio, how much ballast and cement do i need, bulk bags of ballast, bulk bag of ballast, sand to cement ratio for mortar, sand to cement mix ratio">
+    <link rel="canonical" href="https://cementballast.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -436,8 +436,8 @@
 
 <section class="hero">
     <div class="badge">Free Calculator</div>
-    <h1>How many bags of cement to a <em>bulk bag of ballast?</em></h1>
-    <p>Select your aggregate type, mix ratio and bag size. Get an instant answer for bulk bags, tonnes, or any custom weight.</p>
+    <h1>Ballast and cement calculator — <em>sand and cement mix ratios</em></h1>
+    <p>Calculate how much ballast and cement you need for any project. Get the right ballast to cement ratio, sand to cement mix ratio, and exact bag counts for bulk bags, tonnes, or custom weights.</p>
 </section>
 
 <section class="calc-section">
@@ -532,9 +532,9 @@
 
 <section class="info-section">
     <div class="info-card">
-        <h2>Understanding Cement to Ballast Ratios</h2>
-        <p>Ballast is a pre-mixed blend of sharp sand and gravel (typically a 2:1 gravel-to-sand ratio). When you buy a bulk bag of ballast, you're getting the aggregate already combined — you just need to add cement and water.</p>
-        <p>The most common mix for general domestic work (paths, shed bases, fence posts) is <strong>1 part cement to 4 parts ballast</strong> by weight. For structural work like lintels or load-bearing footings, use a stronger 1:3 ratio.</p>
+        <h2>Understanding the Ballast to Cement Ratio</h2>
+        <p>Ballast is a pre-mixed blend of sharp sand and gravel (typically a 2:1 gravel-to-sand ratio). When you buy <strong>bulk bags of ballast</strong>, you're getting the aggregate already combined — you just need to add cement and water. This makes it the easiest way to mix concrete for most DIY projects.</p>
+        <p>The most common <strong>ballast and cement ratio</strong> for general domestic work (paths, shed bases, fence posts) is <strong>1 part cement to 4 parts ballast</strong> by weight. For structural work like lintels or load-bearing footings, use a stronger 1:3 ratio. If you're working with <strong>sand and cement</strong> alone (for mortar), use a 1:4 or 1:5 <strong>sand to cement mix ratio</strong>.</p>
 
         <h3>Reference Table — Bags Per Bulk Bag</h3>
         <table class="ref-table">
@@ -604,6 +604,21 @@
             <summary>Is ballast the same as MOT Type 1?</summary>
             <div class="faq-answer">No. Ballast is designed to be mixed with cement to make concrete. MOT Type 1 is a crushed stone sub-base material used underneath concrete slabs for drainage and stability. You lay MOT Type 1 first, compact it, then pour concrete made with ballast on top.</div>
         </details>
+
+        <details class="faq-item">
+            <summary>What is the sand and cement mix ratio for mortar?</summary>
+            <div class="faq-answer">The standard sand to cement ratio for mortar is 1:4 (1 part cement to 4 parts sharp sand) for general bricklaying, or 1:3 for a stronger mix below damp-proof course level. For rendering, use 1:5. Always use building sand (soft sand) for mortar, not sharp sand or ballast. Add plasticiser to improve workability.</div>
+        </details>
+
+        <details class="faq-item">
+            <summary>How much ballast and cement do I need for 1 cubic metre?</summary>
+            <div class="faq-answer">For 1 cubic metre of concrete using a 1:4 ballast and cement mix, you need approximately 1.7 bulk bags of ballast (about 1,450kg) and 9 × 25kg bags of cement (225kg). The calculator above lets you work backwards from the amount of ballast you have to find out exactly how many bags of cement to add.</div>
+        </details>
+
+        <details class="faq-item">
+            <summary>What is the best sand and cement mix for paths?</summary>
+            <div class="faq-answer">For concrete paths, use a 1:4 sand and cement mix with ballast (which already contains the right blend of sand and gravel). If mixing sand and gravel separately, use 1:2:3 (cement : sand : gravel). For a mortar bed under paving slabs, use a 1:4 sand cement mix with building sand. A 75–100mm thick slab is standard for garden paths.</div>
+        </details>
     </div>
 </section>
 
@@ -621,7 +636,7 @@
 
     const BULK_BAG_KG = 850;
     const RATIOS = { '1:3': 1/3, '1:4': 1/4, '1:5': 1/5 };
-    const PRICES_UK = { 25: 7.5, 20: 6 };
+    const PRICES_UK = { 25: 6, 20: 5 };
     const PRICES_US = { 80: 5.50, 94: 6.50 };
 
     function setUnits(u) {
