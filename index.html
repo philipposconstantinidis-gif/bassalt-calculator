@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3836314846497472"
-     crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ballast and Cement Calculator — Sand and Cement Mix Ratio Guide</title>
     <meta name="description" content="Free ballast and cement calculator. Find the right ballast to cement ratio, sand and cement mix ratio, and how many bags of cement per bulk bag of ballast or sand. Instant results.">
@@ -53,13 +51,20 @@
             padding: 24px 24px 0;
             display: flex;
             align-items: center;
-            gap: 12px;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
         }
         nav .logo {
             font-family: 'Instrument Serif', serif;
             font-size: 20px;
             color: var(--accent);
+            text-decoration: none;
         }
+        nav .nav-links { display: flex; gap: 24px; align-items: center; }
+        nav .nav-link { font-size: 13px; font-weight: 500; color: var(--text-muted); text-decoration: none; transition: color 0.15s; }
+        nav .nav-link:hover { color: var(--text); }
+        nav .nav-link.active { color: var(--accent); font-weight: 600; }
         nav .sep { width: 1px; height: 16px; background: var(--border); }
         nav .subtitle { font-size: 13px; color: var(--text-muted); font-weight: 500; }
 
@@ -429,9 +434,13 @@
 <body>
 
 <nav>
-    <span class="logo">MixCalc</span>
-    <span class="sep"></span>
-    <span class="subtitle">Cement &amp; Ballast Ratio Calculator</span>
+    <a href="/" class="logo">MixCalc</a>
+    <div class="nav-links">
+        <a href="/" class="nav-link active">Calculator</a>
+        <a href="/about.html" class="nav-link">About</a>
+        <a href="/contact.html" class="nav-link">Contact</a>
+        <a href="/privacy.html" class="nav-link">Privacy</a>
+    </div>
 </nav>
 
 <div class="ad-slot"><div class="ad-slot-inner">Ad Space — Leaderboard</div></div>
@@ -626,7 +635,15 @@
 
 <div class="ad-slot" style="margin-bottom:16px;"><div class="ad-slot-inner">Ad Space — Bottom</div></div>
 
-<footer>&copy; 2026 MixCalc. Estimates for guidance only.</footer>
+<footer>
+    <div style="margin-bottom: 12px;">
+        <a href="/" style="color: var(--text-muted); margin: 0 12px; text-decoration: none;">Calculator</a>
+        <a href="/about.html" style="color: var(--text-muted); margin: 0 12px; text-decoration: none;">About</a>
+        <a href="/contact.html" style="color: var(--text-muted); margin: 0 12px; text-decoration: none;">Contact</a>
+        <a href="/privacy.html" style="color: var(--text-muted); margin: 0 12px; text-decoration: none;">Privacy</a>
+    </div>
+    &copy; 2026 MixCalc. Estimates for guidance only.
+</footer>
 
 <script>
     let units = 'metric';
@@ -819,4 +836,3 @@
 
 </body>
 </html>
-
