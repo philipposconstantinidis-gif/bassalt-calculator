@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concrete Mix Ratios Explained — Which Mix for Which Job? | MixCalc</title>
+    <meta name="description" content="Complete guide to concrete mix ratios for UK DIY projects. Learn which cement and ballast ratio to use for shed bases, footings, paths, fence posts, and more.">
+    <meta name="keywords" content="concrete mix ratio, cement and ballast ratio, 1 to 4 mix, 1 to 3 mix, concrete mix for shed base, concrete mix for footings, how to mix concrete, ballast and cement, sand and cement ratio, DIY concrete guide">
+    <link rel="canonical" href="https://cementballast.com/mix-ratios.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --bg: #1A1D23; --surface: #23272F; --surface-2: #2A2F3A; --text: #E8E6E1; --text-muted: #8A8D95; --accent: #E8A84C; --accent-glow: rgba(232,168,76,0.12); --border: #33373F; --green: #4ADE80; --amber: #FBBF24; --red: #F87171; }
+        body { font-family: 'Outfit', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+        nav { max-width: 860px; margin: 0 auto; padding: 24px 24px 0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+        nav .logo { font-family: 'Instrument Serif', serif; font-size: 20px; color: var(--accent); text-decoration: none; }
+        nav .nav-links { display: flex; gap: 24px; flex-wrap: wrap; }
+        nav .nav-link { font-size: 13px; font-weight: 500; color: var(--text-muted); text-decoration: none; }
+        nav .nav-link:hover { color: var(--text); }
+        nav .nav-link.active { color: var(--accent); font-weight: 600; }
+        .container { max-width: 740px; margin: 0 auto; padding: 48px 24px 80px; }
+        h1 { font-family: 'Instrument Serif', serif; font-size: 36px; margin-bottom: 12px; line-height: 1.15; }
+        .subtitle { font-size: 15px; color: var(--text-muted); margin-bottom: 32px; line-height: 1.7; }
+        h2 { font-family: 'Instrument Serif', serif; font-size: 26px; margin: 36px 0 14px; }
+        h3 { font-size: 16px; font-weight: 700; margin: 24px 0 10px; }
+        p { font-size: 15px; color: var(--text-muted); margin-bottom: 14px; line-height: 1.8; }
+        strong { color: var(--text); }
+        a { color: var(--accent); }
+
+        .ratio-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 20px 0; }
+        .ratio-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+        .ratio-card .ratio-name { font-family: 'Instrument Serif', serif; font-size: 28px; font-weight: 600; color: var(--accent); margin-bottom: 4px; }
+        .ratio-card .ratio-grade { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-muted); margin-bottom: 10px; }
+        .ratio-card .ratio-use { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+
+        .use-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+        .use-table th { text-align: left; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); padding: 10px 16px; border-bottom: 1px solid var(--border); }
+        .use-table td { padding: 14px 16px; border-bottom: 1px solid var(--border); color: var(--text-muted); }
+        .use-table tr:last-child td { border-bottom: none; }
+        .use-table .project { color: var(--text); font-weight: 600; }
+        .use-table .mix { font-family: 'Instrument Serif', serif; color: var(--accent); font-size: 16px; font-weight: 600; }
+        .use-table .strength { font-size: 12px; }
+        .strength-high { color: var(--green); }
+        .strength-mid { color: var(--amber); }
+        .strength-low { color: var(--red); }
+
+        .tip-box { background: var(--accent-glow); border: 1px solid rgba(232,168,76,0.25); border-radius: 10px; padding: 18px 22px; margin: 16px 0; font-size: 14px; color: var(--text-muted); }
+        .tip-box strong { color: var(--accent); }
+
+        .step { display: flex; gap: 16px; margin-bottom: 20px; }
+        .step-num { width: 32px; height: 32px; background: var(--accent); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; color: var(--bg); flex-shrink: 0; margin-top: 2px; }
+        .step-content h4 { font-size: 15px; font-weight: 700; margin-bottom: 4px; color: var(--text); }
+        .step-content p { font-size: 14px; margin-bottom: 0; }
+
+        .faq-item summary { font-weight: 600; font-size: 14px; cursor: pointer; padding: 14px 0; list-style: none; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid var(--border); color: var(--text); }
+        .faq-item[open] summary { border-bottom-color: var(--accent); }
+        .faq-item summary::-webkit-details-summary { display: none; }
+        .faq-item summary::before { content: '+'; display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; background: var(--surface); border: 1px solid var(--border); color: var(--accent); font-weight: 700; font-size: 14px; flex-shrink: 0; border-radius: 6px; }
+        .faq-item[open] summary::before { content: '−'; background: var(--accent); color: var(--bg); border-color: var(--accent); }
+        .faq-item .faq-answer { padding: 10px 0 14px 32px; color: var(--text-muted); font-size: 14px; line-height: 1.7; border-bottom: 1px solid var(--border); }
+
+        .cta-box { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 28px; text-align: center; margin: 32px 0; }
+        .cta-box h3 { font-family: 'Instrument Serif', serif; font-size: 22px; margin-bottom: 8px; }
+        .cta-box p { font-size: 14px; margin-bottom: 16px; }
+        .cta-box a.btn { display: inline-block; padding: 12px 28px; background: var(--accent); color: var(--bg); border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 14px; }
+
+        footer { max-width: 860px; margin: 0 auto; padding: 24px; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: var(--text-muted); }
+        footer a { color: var(--text-muted); text-decoration: none; margin: 0 12px; }
+        @media (max-width: 600px) { .ratio-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+<nav><a href="/" class="logo">MixCalc</a><div class="nav-links"><a href="/" class="nav-link">Calculator</a><a href="/mix-ratios.html" class="nav-link active">Mix Ratios</a><a href="/shed-base.html" class="nav-link">Shed Base Guide</a><a href="/about.html" class="nav-link">About</a><a href="/contact.html" class="nav-link">Contact</a></div></nav>
+
+<div class="container">
+    <h1>Concrete Mix Ratios Explained</h1>
+    <p class="subtitle">Not sure whether you need a 1:3, 1:4, or 1:5 mix? This guide explains which concrete mix ratio to use for every common UK DIY project — and why it matters.</p>
+
+    <h2>The three standard mix ratios</h2>
+    <p>Concrete mix ratios describe the proportion of cement to aggregate (ballast, or separate sand and gravel) by volume. "1:4" means one part cement to four parts ballast. More cement = stronger concrete, but also more expensive and harder to work with.</p>
+
+    <div class="ratio-grid">
+        <div class="ratio-card">
+            <div class="ratio-name">1:3</div>
+            <div class="ratio-grade">Strong · Approx C30</div>
+            <div class="ratio-use">Structural footings, retaining walls, load-bearing columns, garage floors, and any work that takes heavy loads. The strongest standard DIY mix.</div>
+        </div>
+        <div class="ratio-card">
+            <div class="ratio-name">1:4</div>
+            <div class="ratio-grade">Standard · Approx C20</div>
+            <div class="ratio-use">Shed bases, garden paths, patios, fence posts, and most domestic foundations. The safe default for nearly all DIY projects.</div>
+        </div>
+        <div class="ratio-card">
+            <div class="ratio-name">1:5</div>
+            <div class="ratio-grade">Light · Approx C15</div>
+            <div class="ratio-use">Non-structural fill, bedding for paving slabs, haunching around drain pipes, and areas that won't carry significant weight.</div>
+        </div>
+        <div class="ratio-card">
+            <div class="ratio-name">1:6</div>
+            <div class="ratio-grade">Weak · Approx C10</div>
+            <div class="ratio-use">Blinding concrete (thin base layer under footings), temporary fill, and non-load-bearing applications where strength isn't critical.</div>
+        </div>
+    </div>
+
+    <div class="tip-box"><strong>Not sure?</strong> Use 1:4. It's strong enough for 90% of garden and domestic projects, easy to mix, and the most cost-effective. Only go stronger (1:3) for structural work or weaker (1:5) for fill and bedding.</div>
+
+    <h2>Which mix for which job</h2>
+
+    <table class="use-table">
+        <tr><th>Project</th><th>Mix</th><th>Strength</th></tr>
+        <tr><td class="project">Shed base</td><td class="mix">1:4</td><td class="strength strength-mid">C20 — Standard</td></tr>
+        <tr><td class="project">Garden path</td><td class="mix">1:4</td><td class="strength strength-mid">C20 — Standard</td></tr>
+        <tr><td class="project">Patio slab base</td><td class="mix">1:4</td><td class="strength strength-mid">C20 — Standard</td></tr>
+        <tr><td class="project">Fence posts</td><td class="mix">1:4</td><td class="strength strength-mid">C20 — Standard</td></tr>
+        <tr><td class="project">Structural footings</td><td class="mix">1:3</td><td class="strength strength-high">C30 — Strong</td></tr>
+        <tr><td class="project">Retaining wall base</td><td class="mix">1:3</td><td class="strength strength-high">C30 — Strong</td></tr>
+        <tr><td class="project">Garage floor</td><td class="mix">1:3</td><td class="strength strength-high">C30 — Strong</td></tr>
+        <tr><td class="project">Driveway</td><td class="mix">1:3</td><td class="strength strength-high">C30 — Strong</td></tr>
+        <tr><td class="project">Paving slab bedding</td><td class="mix">1:5</td><td class="strength strength-low">C15 — Light</td></tr>
+        <tr><td class="project">Drain pipe haunching</td><td class="mix">1:5</td><td class="strength strength-low">C15 — Light</td></tr>
+        <tr><td class="project">Blinding layer</td><td class="mix">1:6</td><td class="strength strength-low">C10 — Weak</td></tr>
+    </table>
+
+    <h2>Ballast vs separate sand and gravel</h2>
+    <p><strong>Ballast</strong> (also called "all-in aggregate" or "mixed aggregate") is a pre-mixed combination of sharp sand and gravel, typically in a 2:1 gravel-to-sand ratio. It's the most common aggregate for DIY concrete because you only need to buy one product and mix it with cement.</p>
+    <p><strong>Separate sand and gravel</strong> gives you more control over the mix. A typical 1:2:3 mix (1 cement : 2 sharp sand : 3 gravel) produces slightly stronger concrete than 1:4 ballast because you can control the aggregate grading. However, for most DIY projects the difference is negligible and ballast is far more convenient.</p>
+
+    <div class="tip-box"><strong>Quick rule:</strong> Ballast bags from B&Q, Wickes, or Travis Perkins are fine for everything up to and including shed bases and footings. Only bother with separate sand and gravel if you're doing structural work where a building inspector will check the mix.</div>
+
+    <h2>How to mix concrete by hand</h2>
+
+    <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content"><h4>Measure your materials</h4><p>Use a bucket as your "part" measure. For a 1:4 mix: one bucket of cement to four buckets of ballast. Keep your measuring consistent — always use the same bucket, filled to the same level.</p></div>
+    </div>
+    <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content"><h4>Dry mix first</h4><p>On a mixing board or in a wheelbarrow, combine the cement and ballast while dry. Turn the pile over with a shovel at least three times until the colour is uniform — you shouldn't see any patches of grey cement or brown ballast.</p></div>
+    </div>
+    <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content"><h4>Add water gradually</h4><p>Make a crater in the middle of your dry mix and add water slowly — about half a bucket per mix to start. Too much water weakens the concrete dramatically. The ideal consistency is like thick porridge: holds its shape when squeezed but isn't dry or crumbly.</p></div>
+    </div>
+    <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content"><h4>Mix thoroughly</h4><p>Turn the wet mix over repeatedly until every part is the same colour and consistency. No dry spots, no puddles. If it's too dry, add tiny amounts of water. If too wet, add a small amount of dry mix. You have about 60-90 minutes before it starts to set.</p></div>
+    </div>
+
+    <div class="cta-box">
+        <h3>Know how much you need?</h3>
+        <p>Use our free calculator to find exactly how many bags of cement and ballast to buy.</p>
+        <a href="/" class="btn">Open Calculator →</a>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <details class="faq-item"><summary>What is the strongest concrete mix ratio?</summary><div class="faq-answer">For DIY, 1:3 (one part cement to three parts ballast) is the strongest standard mix, producing approximately C30 grade concrete. This is suitable for structural footings, retaining walls, and load-bearing work. Stronger mixes exist (1:2 or 1:1.5) but are rarely needed for domestic projects and use a lot of expensive cement.</div></details>
+
+    <details class="faq-item"><summary>What is the best mix for a shed base?</summary><div class="faq-answer">A 1:4 mix (one cement to four ballast) is the standard choice for shed bases. This produces C20 grade concrete, which is more than strong enough for any shed. Pour to a depth of 75-100mm on a compacted sub-base of hardcore. See our <a href="/shed-base.html">shed base guide</a> for the full step-by-step process.</div></details>
+
+    <details class="faq-item"><summary>Can I use building sand instead of ballast?</summary><div class="faq-answer">No — building sand (soft sand) is for mortar, not concrete. Concrete needs sharp sand or ballast, which contains angular gravel pieces that interlock and give the concrete its strength. Using building sand produces a weak, crumbly mix that won't hold up to any load.</div></details>
+
+    <details class="faq-item"><summary>How much water do I add to concrete?</summary><div class="faq-answer">As little as possible while still getting a workable mix. A rough guide is about half a bucket of water per bucket of cement, but it depends on how wet your ballast is. The ideal concrete is like thick porridge — holds its shape but isn't dry. Too much water is the most common DIY mistake and dramatically reduces strength.</div></details>
+
+    <details class="faq-item"><summary>What is C20, C25, C30 concrete?</summary><div class="faq-answer">The "C" number refers to the compressive strength in newtons per square millimetre (N/mm²) after 28 days of curing. C20 withstands 20 N/mm², C30 withstands 30 N/mm². For context, a 1:4 ballast mix is roughly C20, and a 1:3 mix is roughly C30. Most domestic projects only need C20.</div></details>
+
+    <details class="faq-item"><summary>How long does concrete take to set?</summary><div class="faq-answer">Concrete begins to harden within 2-4 hours and is hard enough to walk on after 24-48 hours. However, it takes 28 days to reach full strength. Don't put heavy loads on fresh concrete for at least 3-7 days, and keep it damp (mist with water or cover with polythene) during hot weather to prevent cracking.</div></details>
+</div>
+
+<footer><div style="margin-bottom: 12px;"><a href="/">Calculator</a><a href="/mix-ratios.html">Mix Ratios</a><a href="/shed-base.html">Shed Base</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy.html">Privacy</a></div>&copy; 2026 MixCalc. Estimates for guidance only.</footer>
+</body>
+</html>
